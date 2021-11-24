@@ -57,8 +57,12 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu hidden" id="js-menu" role="navigation" aria-label="Mobile Navigation">
             <ul>
-                <li>
+                <li class="sub-menu">
                     <a href="#">Menu</a>
+                    <button id="js-sub-menu" class="nav-link"><svg viewBox="0 0 24 24" class="valign-middle " preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="width:24px;height:24px;overflow:visible;fill:currentColor">
+                            <path d="M8.902 17.656c-.293.293-.293.768 0 1.06.293.294.768.294 1.06 0L16.38 12.3c.293-.293.293-.768 0-1.06L9.86 4.72c-.293-.293-.767-.293-1.06 0-.293.293-.293.767 0 1.06l5.99 5.99L8.9 17.656z"></path>
+                        </svg></button>
+                    <div>
                 </li>
                 <li>
                     <a href="#">Rewards</a>
@@ -78,6 +82,21 @@
                     </a>
                 </div>
             </div>
+
+        </div>
+
+        <div class="mobile-menu secondary-menu hidden" id="js-secondary-menu" aria-hidden="true">
+            <div class="mobile-nav-title"><button class="nav-link"><svg viewBox="0 0 24 24" class="valign-middle sb-hamburgerNav-pushViewButton-left-arrow" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="width:24px;height:24px;overflow:visible;fill:currentColor">
+                        <path d="M15.098 5.78c.292-.293.292-.767 0-1.06-.293-.293-.768-.293-1.06 0L7.62 11.137c-.293.293-.293.768 0 1.06l6.52 6.52c.292.293.767.293 1.06 0 .293-.293.293-.768 0-1.06l-5.99-5.99L15.1 5.78z"></path>
+                    </svg></button>
+                <span class="text-md">Menu</span>
+            </div>
+            <ul>
+                <li><a href="#">All products</a></li>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Previous Orders</a></li>
+                <li><a href="#">Favorite Products</a></li>
+        </div>
         </div>
         <!-- Box A -->
         <section class="box box-a bg-primary text-center py-md">

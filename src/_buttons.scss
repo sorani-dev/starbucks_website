@@ -33,3 +33,14 @@
     }
   }
 }
+
+.nav-link {
+  background-color: #fff;
+  outline: none;
+  border: none;
+
+  &:hover,
+  &:focus {
+    outline: auto;
+  }
+}

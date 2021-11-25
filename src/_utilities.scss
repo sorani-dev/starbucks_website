@@ -16,9 +16,24 @@
   color: #fff;
 }
 
+.bg-white {
+  background-color: #fff;
+  color: #000;
+}
+
 /* Text Styling */
 .text-center {
   text-align: center;
+}
+
+.text-start {
+  text-align: left;
+  text-align: start;
+}
+
+.text-end {
+  text-align: right;
+  text-align: end;
 }
 
 .text-xl {
@@ -46,6 +61,18 @@
   margin-bottom: 20px;
 }
 
+.text-fw-700 {
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-weight: 700;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 /* Padding */
 .py-sm {
   padding: 10px 0;
@@ -55,6 +82,55 @@
 }
 .py-lg {
   padding: 40px 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+/* Margin */
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+@for $var from 1 to 13 {
+  .mb-#{$var} {
+    margin-bottom: #{$var}rem;
+    margin-block-end: #{$var}rem;
+  }
+  .mt-#{$var} {
+    margin-top: #{$var}rem;
+    margin-block-start: #{$var}rem;
+  }
+  .ml-#{$var} {
+    margin-left: #{$var}rem;
+    margin-inline-start: #{$var}rem;
+  }
+  .mr-#{$var},
+  .m-ie-#{$var} {
+    margin-right: #{$var}rem;
+    margin-inline-end: #{$var}rem;
+  }
+  .my-#{$var} {
+    margin-top: #{$var}rem;
+    margin-bottom: #{$var}rem;
+    margin-block: #{$var}rem;
+  }
+  .mx-#{$var} {
+    margin-left: #{$var}rem;
+    margin-right: #{$var}rem;
+    margin-inline: #{$var}rem;
+  }
+}
+
+/* links */
+.link-primary {
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 /* skip link */
@@ -100,6 +176,16 @@
 
 .grid-reversed :first-child {
   order: 2;
+}
+
+.grid-block-start {
+  align-items: start;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
 }
 
 @media (max-width: 768px) {

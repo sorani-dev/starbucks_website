@@ -32,6 +32,20 @@
       background-color: #333;
     }
   }
+  &-primary {
+    background-color: var(--color-primary);
+    &:hover {
+      background-color: lighten($color: $color-primary, $amount: 0.25);
+    }
+  }
+  &-primary-outline {
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    background-color: transparent;
+    &:hover {
+      background-color: var(--color-extra);
+    }
+  }
 }
 
 .nav-link {
